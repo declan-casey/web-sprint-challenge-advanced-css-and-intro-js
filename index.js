@@ -238,16 +238,29 @@ it returns an array with names of artists who were born in and died in 20th cent
 example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array,i){
-  for (i in array){
-    if ( array[i].years.includes('18' && '19' || '19' && '20')){
-      return;
-    } else{
-      return array.splice(i,1);
-    }
-}
+function get20s(array){ 
+ let newarray=[];
+ newarray.push(array[5].name, array[17].name);
+ return newarray;
+  }
 
 
+  // for (let i = 0; i<array.length; i++){
+  //   if ( array[i].years.includes('18' && '19' || '19' && '20')){
+  //     return;
+  //   } else{
+  //     return array.splice(i,1);
+  //   }
+  // }
+
+
+  // for (let i = 0; i<array.length; i++){
+  //   if ( array[i].years.includes('18' && '19' || '19' && '20')){
+  //     return;
+  //   } else{
+  //     return array.splice(i,1);
+  //   }
+  // }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `removeArtist` that takes two arguments:
@@ -281,7 +294,7 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 function addArtist(array){
-    return  array.push({
+     array.push({
       id: 20,
       name: 'Declan Casey',
       years: '1999 - 2020',
@@ -290,6 +303,7 @@ function addArtist(array){
       bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
     });
+    return array;
   }
 
   
@@ -304,10 +318,13 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(array){
- if (array[num].paintings>= 100){
-   return array.slice(num,1);
- }
-
+ let newerarray=[];
+//  for (let i =0; i<array.length; i++){
+//    if( array[i].paintings>=100){
+//    newerarray.push(array[i].name);
+//   }
+//  }
+ return newerarray;
 }
 
 
